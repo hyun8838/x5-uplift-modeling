@@ -1,0 +1,47 @@
+{
+  "script_sha256": "93df06aad11c6d9e8043aa42ffd67a3635726f23e8dba4837fc8c6d4322f2aae",
+  "inputs": {
+    "holdout_eval.json": "cb8a515b6813f8c668f3d2448db27a7c9d72a5c95434f0d514dc968699d932e8",
+    "holdout_predictions.parquet": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04"
+  },
+  "reference": "Surry & Radcliffe (2011) Quality measures for uplift models, \u00a71 and Fig. 1",
+  "n": 60012,
+  "n_treated": 29995,
+  "overall": {
+    "treated_rate": 0.6365060843473912,
+    "control_rate": 0.6032914681680381,
+    "uplift": 0.03321461617935306,
+    "uplift_pp": 3.3214616179353063,
+    "ci95_pp": [
+      2.545059616520134,
+      4.121356185653814
+    ]
+  },
+  "top30": {
+    "uplift_pp": 7.373415944489603,
+    "ci95_pp": [
+      5.984546630696759,
+      8.873165133000747
+    ]
+  },
+  "top30_minus_overall": {
+    "pp": 4.051954326554297,
+    "ci95_pp": [
+      2.855043035828084,
+      5.2632560149314545
+    ],
+    "share_of_reps_le_0": 0.0
+  },
+  "top30_over_overall": {
+    "ratio": 2.219931100415088,
+    "ci95": [
+      1.8124000917933718,
+      2.7535908964326032
+    ]
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 20261016,
+    "note": "same replicates as holdout_eval.json (uplift_at_30 interval reproduced within 1e-12)"
+  }
+}

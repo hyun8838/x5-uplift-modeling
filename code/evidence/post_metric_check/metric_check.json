@@ -1,0 +1,53 @@
+{
+  "selected": "full__xgboost__r",
+  "selected_ranks": {
+    "qini": 1,
+    "uplift_auc": 1,
+    "uplift_at_30": 13
+  },
+  "uplift_at_30_pp": {
+    "max": 6.224762640698831,
+    "selected": 5.663622975859867,
+    "median_fold_sd": 0.99632883180783
+  },
+  "spearman_between_candidate_means": {
+    "qini_mean": {
+      "qini_mean": 1.0,
+      "uplift_auc_mean": 0.9973,
+      "uplift_at_30_mean": 0.8681
+    },
+    "uplift_auc_mean": {
+      "qini_mean": 0.9973,
+      "uplift_auc_mean": 1.0,
+      "uplift_at_30_mean": 0.8719
+    },
+    "uplift_at_30_mean": {
+      "qini_mean": 0.8681,
+      "uplift_auc_mean": 0.8719,
+      "uplift_at_30_mean": 1.0
+    }
+  },
+  "best_candidate_per_fold": {
+    "qini": [
+      "full__xgboost__s",
+      "full__xgboost__x",
+      "full__lightgbm__four_class",
+      "full__lightgbm__dr",
+      "full__xgboost__r"
+    ],
+    "uplift_auc": [
+      "full__xgboost__s",
+      "full__xgboost__x",
+      "full__lightgbm__four_class",
+      "full__lightgbm__dr",
+      "full__xgboost__r"
+    ],
+    "uplift_at_30": [
+      "compact__lightgbm__s",
+      "full__xgboost__x",
+      "compact__lightgbm__four_class",
+      "compact__xgboost__dr",
+      "full__xgboost__dr"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "script_sha256": "7c6c144dbea386a796e4ebe9e79b58aefc2b7d7391bcdb5fd54e47e9d8a3ad75",
+  "inputs": {
+    "holdout_predictions.parquet": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04",
+    "holdout_eval.json": "cb8a515b6813f8c668f3d2448db27a7c9d72a5c95434f0d514dc968699d932e8"
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 20261018,
+    "scheme": "within W, percentile 95 %"
+  },
+  "overall_uplift_pp": 3.3214616179353063,
+  "gates_G1_minus_G4_pp": {
+    "diff": 5.707502107785034,
+    "ci95": [
+      3.580674360198687,
+      7.79702751034968
+    ]
+  },
+  "files": {
+    "clan.csv": "3e0fb7ba30e81910741b6e88faba2157310716db4f0ec9f1593fe7622e48fd0f",
+    "deciles.csv": "1aa7070b18576e38b1b00b81727c21eae244e679e4275121205ba63e38f6eb55",
+    "fig3_deciles.png": "0e4e8a8e6378cc46af839e297c68c335b021532d74ec3ed1c21a4bb68add0c1f",
+    "fig4_gates.png": "bbd55c043bbc1511f1e2b1458a28e143aa8ac0644f4a667284f542e11ce80e53",
+    "gates.csv": "b335a8b89892660ad9a4e01972dd8b428c00ef4edabbb78e3a59e4bead6dc61c"
+  }
+}

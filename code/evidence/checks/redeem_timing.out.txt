@@ -1,0 +1,11 @@
+purchases rows 45786568
+window 2018-11-21 21:02:33 2019-03-18 23:40:03
+train N 200039 treat share 0.49981
+redeem <= window end                     n= 159893 (79.93%) treat=0.5007 z=+0.69
+redeem > window end                      n=  22600 (11.30%) treat=0.5084 z=+2.59
+redeem missing                           n=  17546 ( 8.77%) treat=0.4809 z=-5.01
+first_issue max 2019-03-15 21:50:56 | redeem max 2019-11-20 01:14:10
+redeem>end & spent points within window: 0 of 22600
+redeem missing & spent points within window: 0 of 17546
+redeem<=end & first_spent_tx < first_redeem (by >1 day): 0 of 159893
+redeem<=end & no points spent in window: 37953

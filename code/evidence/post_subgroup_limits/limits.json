@@ -1,0 +1,54 @@
+{
+  "script_sha256": "7d8bb172cff4cc0c1cb9d50a027a5e617cf34914e2e5793ce3286cd7e3187614",
+  "inputs": {
+    "holdout_predictions.parquet": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04"
+  },
+  "reproduced_stored_intervals": true,
+  "nan_holdout": {
+    "spend_90d": 0,
+    "purchases_90d": 0,
+    "category_count": 0,
+    "days_since_issue": 0,
+    "express_points_used": 0,
+    "age": 0
+  },
+  "lpm_columns": [
+    "const",
+    "W",
+    "spend_90d=1",
+    "W:spend_90d=1",
+    "spend_90d=2",
+    "W:spend_90d=2",
+    "purchases_90d=1",
+    "W:purchases_90d=1",
+    "purchases_90d=2",
+    "W:purchases_90d=2",
+    "category_count=1",
+    "W:category_count=1",
+    "category_count=2",
+    "W:category_count=2",
+    "days_since_issue=1",
+    "W:days_since_issue=1",
+    "days_since_issue=2",
+    "W:days_since_issue=2",
+    "express_points_used=1",
+    "W:express_points_used=1",
+    "age=1",
+    "W:age=1",
+    "age=2",
+    "W:age=2",
+    "age=3",
+    "W:age=3",
+    "age=4",
+    "W:age=4"
+  ],
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 20261019
+  },
+  "files": {
+    "contrasts_all.csv": "a8fa0ae8faa84aa5c3f5a9f5f67963182d3f1c8af61b2a8b5c596048903c37b1",
+    "cross_3x3.csv": "05e73135eb6f8d4b336a844f177b0f10ac8657e11b0a19daa3bcb42b328a842d",
+    "scale.csv": "9a126582ecc1792587f4aead69b1cd05608ef6b887c94103fe0be70b4f783155"
+  }
+}

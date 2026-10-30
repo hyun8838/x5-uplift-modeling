@@ -1,0 +1,93 @@
+{
+  "candidate": "full__xgboost__r",
+  "code": {
+    "code_fingerprint": "f55e632fd89d8df466ce4d80918aff532f671c771e17181d536b719e2623ead9",
+    "eval_script_sha256": "3aa7230537138ee149963e1a854b699ebdbd8166b77304fea756555081a62eed",
+    "module_sha256": {
+      "kl_filter.py": "e9a1f707702509f687fc9af06184d2be2e33bc7226d07ca77b84a30ba38de8d5",
+      "learners.py": "e2c6914c7687b3762c96d33bacb3ba9416211ad154acb20c44f4ec98dd425847",
+      "qini.py": "01e629ca382e5ca9bec01c6dacb9c46356473838b6e757dfcf97f3ee2a22a7d6",
+      "tune.py": "04729ff4e737d91d25b9e92c56acf3a0eaeafeb31dae858e14cb10bcc567ae2c"
+    },
+    "stage_script_sha256": {
+      "final.py": "b991ed36f46595e1379677595fc695dc780a16203a98b3002aab5d2086d530a8",
+      "holdout_eval.py": "3aa7230537138ee149963e1a854b699ebdbd8166b77304fea756555081a62eed",
+      "selection.py": "88fea07317feab1356fbe40c067f1233878623f4a35f04a1ab06d978ca18dd60"
+    }
+  },
+  "created_at": "2026-10-27 20:44:08 +0900",
+  "labels_sha256": "ae3dc4c17e98426fa4233fa03421328d259b8720e56ad0380b260ca2edd19bd4",
+  "metrics": {
+    "boundary_ties": {
+      "control": {
+        "n_cut": 9005,
+        "n_group": 30017,
+        "straddles_cut": false,
+        "tie_block_in_top": 1,
+        "tie_block_share_of_group": 3.331445514208615e-05,
+        "tie_block_size": 1
+      },
+      "treated": {
+        "n_cut": 8998,
+        "n_group": 29995,
+        "straddles_cut": false,
+        "tie_block_in_top": 1,
+        "tie_block_share_of_group": 3.333888981496916e-05,
+        "tie_block_size": 1
+      }
+    },
+    "n": 60012,
+    "n_treated": 29995,
+    "permutation": {
+      "b": 0,
+      "n_perm": 5000,
+      "p": 0.0001999600079984003
+    },
+    "qini": 0.016044497366637222,
+    "qini_ci95": [
+      0.010814334808153608,
+      0.021414952031300487
+    ],
+    "settings": {
+      "bootstrap": "within W groups, Y not stratified, sorted indices, percentile linear",
+      "k": 0.3,
+      "n_boot": 2000,
+      "n_perm": 5000,
+      "order": "client_id lexicographic",
+      "permutation": "shuffle scores, W and Y fixed, one-sided >=, p=(1+b)/(1+n_perm)",
+      "rng": "numpy default_rng (PCG64)",
+      "seed_boot": 20261016,
+      "seed_perm": 20261017,
+      "strategy": "by_group"
+    },
+    "uplift_at_30": 0.07373415944489603,
+    "uplift_at_30_ci95": [
+      0.05984546630696758,
+      0.08873165133000746
+    ],
+    "uplift_at_30_pp": 7.373415944489603,
+    "uplift_at_30_pp_ci95": [
+      5.984546630696759,
+      8.873165133000747
+    ]
+  },
+  "nb_interval": {
+    "flag": false,
+    "hi": 0.018594318136276957,
+    "lo": 0.004292494779385379,
+    "mean": 0.011443406457831169,
+    "rule": "lo <= 0 <= hi (closed) or mean <= 0"
+  },
+  "orphan_tmp_moved_aside": [],
+  "predictions": {
+    "file": "holdout_predictions.parquet",
+    "sha256": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04"
+  },
+  "seal": {
+    "manifest_sha256": "067cada4dfc4162e4bcc4e2f754a5fc8600683f6df89b8bcd41b042d65eff825",
+    "model_sha256": "81fdb1a5ee0d60e62f92fb80ef2193beb999786a19d46658af28e98d88114c7f",
+    "params_sha256": "6f041e3aee31fdc7f806235745eebdf7a91cd31cbd6b266a5ab15608fc634f0e",
+    "scores_sha256": "e3f591b9010bca69ecd43fbd961280b91fade6933e5be23d1105b3b82914393f"
+  },
+  "stage": "holdout evaluation"
+}

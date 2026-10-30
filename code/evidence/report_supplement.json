@@ -1,0 +1,35 @@
+{
+  "script_sha256": "4fa4595aafce99436931e9108af6b2132981f174c690e7f035ce93a913fa5d65",
+  "inputs": {
+    "holdout_eval.json": "cb8a515b6813f8c668f3d2448db27a7c9d72a5c95434f0d514dc968699d932e8",
+    "holdout_predictions.parquet": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04",
+    "qini_table.csv": "89165eea54b31abf869ed487f8a3d2464e2f3c45751c68445d80e8be96673279",
+    "optimism_table.csv": "f5c797f08c38b3f356b575991c6b43be7db5ec42a898d865e55470a1a7c9d37d"
+  },
+  "holdout_top30_by_group": {
+    "treated": {
+      "n_group": 29995,
+      "n_cut": 8998,
+      "responders": 5111,
+      "rate": 0.5680151144698822
+    },
+    "control": {
+      "n_group": 30017,
+      "n_cut": 9005,
+      "responders": 4451,
+      "rate": 0.49428095502498615
+    },
+    "difference": 0.07373415944489603
+  },
+  "selection_descriptive": {
+    "sd_min": 0.002068614581212936,
+    "sd_max": 0.006515256003204982,
+    "rank1_20_mean_min": 0.009384567354356907,
+    "rank1_20_mean_max": 0.011443406457831169,
+    "rank1_20_mean_width": 0.002058839103474262,
+    "pairs_full_gt_compact": 11,
+    "pairs_total": 14,
+    "optimism_mean_min": -0.0009518323558984996,
+    "optimism_mean_max": 0.003124236874843922
+  }
+}

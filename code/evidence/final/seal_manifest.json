@@ -1,0 +1,127 @@
+{
+  "candidate": "full__xgboost__r",
+  "choice_sha256": null,
+  "code": {
+    "code_fingerprint": "f55e632fd89d8df466ce4d80918aff532f671c771e17181d536b719e2623ead9",
+    "module_sha256": {
+      "kl_filter.py": "e9a1f707702509f687fc9af06184d2be2e33bc7226d07ca77b84a30ba38de8d5",
+      "learners.py": "e2c6914c7687b3762c96d33bacb3ba9416211ad154acb20c44f4ec98dd425847",
+      "qini.py": "01e629ca382e5ca9bec01c6dacb9c46356473838b6e757dfcf97f3ee2a22a7d6",
+      "tune.py": "04729ff4e737d91d25b9e92c56acf3a0eaeafeb31dae858e14cb10bcc567ae2c"
+    },
+    "stage_script_sha256": {
+      "final.py": "b991ed36f46595e1379677595fc695dc780a16203a98b3002aab5d2086d530a8",
+      "holdout_eval.py": "3aa7230537138ee149963e1a854b699ebdbd8166b77304fea756555081a62eed",
+      "selection.py": "88fea07317feab1356fbe40c067f1233878623f4a35f04a1ab06d978ca18dd60"
+    }
+  },
+  "created_at": "2026-10-27 20:41:50 +0900",
+  "elapsed_seconds_this_call": 1127.0,
+  "env": {
+    "lock_path": "env/requirements.lock.txt",
+    "lock_sha256": "d043328f04b59bf37e16b263635acf3f9ebdb8c2c417ee86e9a2dd016d1c0b65",
+    "machine": "arm64",
+    "n_pins": 36,
+    "pins": {
+      "Mako": "1.4.3",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "SQLAlchemy": "2.1.4",
+      "alembic": "1.20.0",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "cloudpickle": "3.1.2",
+      "colorlog": "6.12.0",
+      "contourpy": "1.4.0",
+      "cycler": "0.12.1",
+      "fonttools": "4.66.1",
+      "idna": "3.20",
+      "joblib": "1.6.0",
+      "kiwisolver": "1.5.1",
+      "lightgbm": "4.7.0",
+      "matplotlib": "3.11.2",
+      "narwhals": "2.26.0",
+      "numpy": "2.5.3",
+      "optuna": "5.0.0",
+      "packaging": "26.3",
+      "pandas": "3.0.6",
+      "pillow": "12.3.0",
+      "pyarrow": "25.0.1",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "requests": "2.34.2",
+      "scikit-learn": "1.9.1",
+      "scikit-uplift": "0.5.1",
+      "scipy": "1.18.1",
+      "six": "1.17.0",
+      "threadpoolctl": "3.7.0",
+      "tqdm": "4.70.1",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0",
+      "xgboost": "3.4.1"
+    },
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "python": "3.12.14"
+  },
+  "files_sha256": {
+    "final_model.pkl": "81fdb1a5ee0d60e62f92fb80ef2193beb999786a19d46658af28e98d88114c7f",
+    "final_params.json": "6f041e3aee31fdc7f806235745eebdf7a91cd31cbd6b266a5ab15608fc634f0e",
+    "final_study.json": "a70d2527acdfb582374fdf5542a737575cbd52c20c12e02bf6f1c2c1d00e42da",
+    "holdout_scores.parquet": "e3f591b9010bca69ecd43fbd961280b91fade6933e5be23d1105b3b82914393f"
+  },
+  "final_folds_sha256": "ffb024d793272a8d765fd74ab0f586c0477486646d1a1b5f3abf0f9d7a8f4708",
+  "final_study": {
+    "best_trial_number": 25,
+    "fingerprint": {
+      "choice": null,
+      "code": "f55e632fd89d8df466ce4d80918aff532f671c771e17181d536b719e2623ead9",
+      "config": "e5ecf93005ce3fb6c7cf6925df165d81d6f927284657972c655ba2d3435b8010",
+      "final_stage_script": "b991ed36f46595e1379677595fc695dc780a16203a98b3002aab5d2086d530a8",
+      "input": "044b6cd041c0da00dd68eac3a9f13c1480efe59301c0f8162f9ed62db57bc141",
+      "selection_result": "27c2dfdce3dc7366f34c8b0ecac2184b7086da0833cc640cf5ede4af2c8e096b"
+    },
+    "n_trials": {
+      "complete": 40,
+      "fail": 0
+    },
+    "name": "full__xgboost__r__outer-1"
+  },
+  "holdout_scores": {
+    "computed_without_labels": true,
+    "file": "holdout_scores.parquet",
+    "rows": 60012,
+    "sha256": "e3f591b9010bca69ecd43fbd961280b91fade6933e5be23d1105b3b82914393f",
+    "sorted_by": "client_id (lexicographic)",
+    "treated": 29995
+  },
+  "inputs_sha256": {
+    "features_full38.parquet": "77049b8c7031d1ad628e334933d8044e31ddf50b7d8f7b2196dba11929763721",
+    "inner_folds.parquet": "6371e2b33d9a4d1ccc0ce8b11d525bb506e8b25ce60220d2075ef5607f14d07a",
+    "split.parquet": "a210d7b4da32400941d801e72b25eecaeef34ddd84ee37fa0a6c1cdffa9d47da",
+    "uplift_train.csv (train rows only, via load_train_only)": "ae3dc4c17e98426fa4233fa03421328d259b8720e56ad0380b260ca2edd19bd4"
+  },
+  "model": {
+    "e_train": 0.49980360930392,
+    "file": "final_model.pkl",
+    "format": "pickle protocol 5 of learners.UpliftModel",
+    "n_train": 140027,
+    "sha256": "81fdb1a5ee0d60e62f92fb80ef2193beb999786a19d46658af28e98d88114c7f"
+  },
+  "nb_interval": {
+    "flag": false,
+    "hi": 0.018594318136276957,
+    "lo": 0.004292494779385379,
+    "mean": 0.011443406457831169,
+    "rule": "lo <= 0 <= hi (closed) or mean <= 0"
+  },
+  "selection_dir": "results/selection",
+  "selection_files_sha256": {
+    "kl_selection_counts.csv": "3a047874a41b09745921a158f6b908e9de180fac6ac33f086c2bc8088f2dcbde",
+    "nb_aux.json": "955449f6794923c0be061750eeba7a6cc2cdfa2e5da360d907cfb4b79873d801",
+    "optimism_table.csv": "f5c797f08c38b3f356b575991c6b43be7db5ec42a898d865e55470a1a7c9d37d",
+    "qini_table.csv": "89165eea54b31abf869ed487f8a3d2464e2f3c45751c68445d80e8be96673279",
+    "selection_result.json": "27c2dfdce3dc7366f34c8b0ecac2184b7086da0833cc640cf5ede4af2c8e096b"
+  },
+  "selection_status": "selected",
+  "stage": "seal manifest"
+}

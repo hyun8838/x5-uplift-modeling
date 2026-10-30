@@ -1,0 +1,23 @@
+table=features_full38.parquet rows=200,039 n_treat=99,981 n_ctrl=100,058
+SMD (missing ignored)
+  redeem_by_cutoff           +0.0069  missing=0.000
+  days_redeem_to_cutoff      -0.0008  missing=0.201
+  issue_redeem_delay_cens    +0.0054  missing=0.201
+  redeem_isna                -0.0234  missing=0.000
+  redeem_unixtime            -0.0016  missing=0.088
+  issue_redeem_delay         -0.0029  missing=0.088
+group z: by_cutoff=1 +0.69 n=159893 | by_cutoff=0 -1.37 n=40146
+null AUC SE approx 0.0013
+  base35                           p=37 AUC=0.4998  z_vs_0.5=-0.17  (6.1s)
+  base35+redeem3                   p=40 AUC=0.4998  z_vs_0.5=-0.14  (6.3s)
+  redeem3 only                     p= 3 AUC=0.5000  z_vs_0.5=+0.01  (3.5s)
+  base35+raw3 (positive control)   p=40 AUC=0.5189  z_vs_0.5=+14.66  (6.3s)
+criteria:
+  |SMD| redeem_by_cutoff < 0.1 ok
+  |SMD| days_redeem_to_cutoff < 0.1 ok
+  |SMD| issue_redeem_delay_cens < 0.1 ok
+  |z| base35+redeem3 < 3.0     ok
+  |z| redeem3 only < 3.0       ok
+positive control detected (z >= 3.0): True
+VERDICT: PASS
+elapsed 22.9s

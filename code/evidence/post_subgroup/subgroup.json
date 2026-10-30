@@ -1,0 +1,37 @@
+{
+  "script_sha256": "d422a6af58d923837b9a6a48d638e555ebbe4f63f2ac594c826f49b14fafb702",
+  "inputs": {
+    "holdout_predictions.parquet": "63bd5937dc5b15d7af8099f7ca4642363a077bc9712d9fc8e073f10098851c04",
+    "features": "77049b8c7031d1ad628e334933d8044e31ddf50b7d8f7b2196dba11929763721",
+    "split": "a210d7b4da32400941d801e72b25eecaeef34ddd84ee37fa0a6c1cdffa9d47da"
+  },
+  "train_tertile_cuts": {
+    "spend_90d": [
+      3212.0366666666664,
+      7161.213333333333
+    ],
+    "purchases_90d": [
+      8.0,
+      17.0
+    ],
+    "category_count": [
+      10.0,
+      14.0
+    ],
+    "days_since_issue": [
+      368.28814043209877,
+      582.5151697530864
+    ]
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 20261019,
+    "scheme": "within W, percentile"
+  },
+  "overall_uplift_pp": 3.3214616179353063,
+  "files": {
+    "contrasts.csv": "ffc821e787b3deefe25bbbaa135c3f7785f1a87b8e4d9b9ebb3c335ee713c562",
+    "fig5_subgroups.png": "7976cc816da50c498a707e26345774c88062d1ce4d22b24eec5d18b55c5cb0af",
+    "subgroups.csv": "663f6c02e65ee48af1a2373579d8c5bf4a437ab6b322ce5fbe6908ef7dc94793"
+  }
+}
